@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--   <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
   <link rel="stylesheet" href="./vars.css">
   <link rel="stylesheet" href="./style.css">
 
@@ -291,16 +292,16 @@
   </div>
 
   <script>
-    function resizeContent() {
+    function adjustScale() {
       const container = document.querySelector('.container');
-      const scaleX = window.innerWidth / 1425; // Scale to fit width
-      const scaleY = window.innerHeight / 4339; // Scale to fit height
-      const scale = Math.min(scaleX, scaleY); // Use the smaller scale to fit both dimensions
+      const scaleX = window.innerWidth / 1425; // Calculate scale based on width
+      const scaleY = window.innerHeight / 4339; // Calculate scale based on height
+      const scale = Math.min(scaleX, scaleY); // Choose the smaller scale to fit both dimensions
       container.style.transform = `scale(${scale})`;
     }
-
-    window.addEventListener('resize', resizeContent);
-    resizeContent(); // Initial adjustment
+    
+    window.addEventListener('resize', adjustScale); // Adjust on window resize
+    adjustScale(); // Initial adjustment
   </script>
 </body>
 
