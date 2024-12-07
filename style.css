@@ -969,11 +969,11 @@ body {
 }
 
 .paragraph-mt-2 {
-  width: 456px;
+  width: 286px;
   height: 468px;
   position: absolute;
-  left: -76.5px;
-  top: 103px;
+  left: 16.5px;
+  top: 115px;
   overflow: hidden;
   object-fit: cover;
 }
