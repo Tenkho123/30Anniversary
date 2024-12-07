@@ -974,7 +974,7 @@ body {
   position: absolute;
   left: 16.5px;
   top: 115px;
-  overflow: hidden;
+/*   overflow: hidden; */
   object-fit: cover;
 }
 
