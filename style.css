@@ -34,6 +34,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   position: relative; */
+  transform: scale(1);
   overflow: auto;
   overflow-x: hidden;
 }
